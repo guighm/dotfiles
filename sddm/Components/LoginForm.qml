@@ -16,7 +16,7 @@ Rectangle {
 
         Text {
             id: welcome
-            text: "Olá, Guilherme"
+            text: "Olá, /SEU NOME/"
             font.pixelSize: 24
             color: "#FFFFFF"
             font.family: "JetBrains Mono"
@@ -53,7 +53,7 @@ Rectangle {
                 radius: 32
             }
             onClicked: {
-                sddm.login("guighm", passwordField.text, sessionModel.lastIndex)
+                sddm.login("USERNAME", passwordField.text, sessionModel.lastIndex)
             }
 
         }

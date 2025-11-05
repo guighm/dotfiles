@@ -1,6 +1,6 @@
 /***** VARIABLES *****/
 
-$primary-color: #181825;
+$primary-color: #2e2e48;
 $secondary-color: #6E93CC;
 
 /***** STYLES *****/
@@ -11,7 +11,7 @@ $secondary-color: #6E93CC;
 }
 
 .bar {
-    background-color: $primary-color;
+    background-color: rgba($primary-color, 1);
     border-radius: 50px;
     border: 1px solid $secondary-color;
 }
@@ -40,14 +40,14 @@ $secondary-color: #6E93CC;
 }
 
 .system-option-box {
-    background-color: $primary-color;
+    background-color: rgba($primary-color, 1);
     border: 1px solid $secondary-color;
     border-radius: 30px;
     font-size: 70px;
 }
 
 .controls {
-    background-color: $primary-color;
+    background-color: rgba($primary-color, 1);
     border: 1px solid $secondary-color;
 }
 
@@ -75,7 +75,7 @@ $secondary-color: #6E93CC;
 
 .tempo {
     padding: 15px 20px 10px 20px;
-    background-color: $primary-color;
+    background-color: rgba($primary-color, 1);
     border: 1px solid $secondary-color;
 }
 
