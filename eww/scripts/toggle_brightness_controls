@@ -1,0 +1,17 @@
+#!/bin/bash
+
+EWW="/usr/bin/eww"
+
+toggle_brightness_controls() {
+	SHOW_BRIGHTNESS_CONTROLS=$($EWW get show_brightness_controls)
+	
+	if [[ "$SHOW_BRIGHTNESS_CONTROLS" = "false" ]]; then
+		$EWW update show_brightness_controls=true
+		$EWW open brightness_controls
+	else
+		$EWW update show_brightness_controls=false
+		$EWW close brightness_controls
+	fi
+}
+
+toggle_brightness_controls

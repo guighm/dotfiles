@@ -1,0 +1,257 @@
+;; ** VARIABLES ***************************************
+
+(defvar show_system_options
+  false
+)
+
+(defvar show_time
+  false
+)
+
+(defvar show_volume_controls
+  false
+)
+
+(defvar show_brightness_controls
+  false
+)
+
+(defpoll hour
+  :interval "0.1s"
+  "date '+%H:%M'"
+)
+
+(defpoll day
+  :interval "0.1s"
+  "date '+%d %b %Y'"
+)
+
+(defpoll battery
+  :interval "0.1s"
+  "scripts/battery"
+)
+
+(defpoll volume
+  :interval "0.1s"
+  "scripts/volume"
+)
+
+(defpoll brightness
+  :interval "0.1s"
+  "scripts/brightness"
+)
+
+(defpoll active_workspace
+  :interval "0.1s"
+  "scripts/active_workspace"
+)
+
+;; ** WIDGETS *****************************************
+
+(defwidget system_option [text color action]
+  (button
+    :onclick action
+    (label
+      :style "color: ${color};"
+      :class "system-option-box"
+    :text text)
+  )
+)
+
+(defwidget time []
+  (box
+    :spacing 10
+    :orientation "v"
+    (label :class "hora" :text hour)
+    (label :class "dia" :text day)
+  )
+)
+
+(defwidget workspace [number]
+  (box
+    :width 50
+    :class {active_workspace == number ? "workspace active-workspace": "workspace"}
+    (eventbox
+      :cursor "pointer"
+      :onclick "hyprctl dispatch workspace ${number}"
+      (label
+        :text number
+      )
+    )
+  )
+)
+
+(defwidget workspaces []
+  (box
+    :class "workspaces"
+    :halign "start"
+    (workspace :number "1")
+    (workspace :number "2")
+    (workspace :number "3")
+    (workspace :number "4")
+    (workspace :number "5")
+  )
+)
+
+(defwidget right_option [icon variable ?action class]
+  (eventbox
+    :class "right-option ${class}"
+    :cursor "pointer"
+    :onclick action
+    (label :text "${icon} ${variable}")
+  )
+)
+
+(defwidget right_options []
+  (box
+    :class "right-options"
+    :halign "end"
+    :spacing 25
+    (right_option :icon "" :variable volume :action "scripts/toggle_volume_controls" :class "")
+    (right_option :icon "󰃠" :variable brightness :action "scripts/toggle_brightness_controls" :class "")
+    (right_option :icon "󰁹" :variable "${battery}%" :class {battery <= 10 ? "discharging": ""})
+  )
+)
+
+(defwidget controls [minus_action plus_action]
+  (box
+    :orientation "h"
+    :halign "center"
+    :spacing 5
+    :class "controls"
+    (button
+      :class "minus"
+      :onclick minus_action
+      (label :text "")
+    )
+    (button
+      :class "plus"
+      :onclick plus_action
+      (label :text "")
+    )
+  )
+)
+
+(defwidget arch []
+  (eventbox
+    :cursor "pointer"
+    :onclick "scripts/toggle_time"
+    :halign "center"
+    (label :class "arch" :text "󰣇")
+  )
+)
+
+;; ** WINDOWS *****************************************
+
+(defwindow volume_controls
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry
+    :x 1575
+    :y 5
+  )
+  (controls :minus_action "scripts/volume_down" :plus_action "scripts/volume_up")
+)
+
+(defwindow brightness_controls
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry
+    :x 1660
+    :y 5
+  )
+  (controls :minus_action "scripts/brightness_down" :plus_action "scripts/brightness_up")
+)
+
+(defwindow poweroff
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry
+    :x 480
+    :y 480
+    :width 150
+    :height 150
+  )
+  (system_option :text "⏻" :color "#DD0000" :action "poweroff")
+)
+
+(defwindow reboot
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry
+    :x 690
+    :y 480
+    :width 150
+    :height 150
+  )
+  (system_option :text "" :color "#F4F166" :action "reboot")
+)
+
+(defwindow suspend
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry
+    :x 900
+    :y 480
+    :width 150
+    :height 150
+  )
+  (system_option :text "" :color "#F4F166" :action "systemctl suspend")
+)
+
+(defwindow lock
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry
+    :x 1100
+    :y 480
+    :width 150
+    :height 150
+  )
+  (system_option :text "" :color "#F4F166" :action "hyprlock &")
+)
+
+(defwindow update
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry
+    :x 1310
+    :y 480
+    :width 150
+    :height 150
+  )
+  (system_option :text "󰇚" :color "#99E2EE" :action "scripts/update")
+)
+
+(defwindow bar
+  :monitor 0
+  :stacking "bg"
+  :orientation "h"
+  :geometry (geometry
+    :y "1%"
+    :width "90%"
+    :height "50px"
+  :anchor "top center")
+  :exclusive true
+  (box
+    :class "bar"
+    (workspaces)
+    (arch)
+    (right_options)
+  ))
+
+(defwindow time
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry
+    :x 800
+    :y 10
+    :width 300
+  )
+  (box
+    :class "tempo"
+    :orientation "v"
+    (label :class "hora" :text hour)
+    (label :class "dia" :text day)
+  )
+)

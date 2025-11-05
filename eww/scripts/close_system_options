@@ -1,0 +1,10 @@
+#!/bin/bash
+
+EWW="/usr/bin/eww"
+
+close() {
+    $EWW update show_system_options=false
+    $EWW close poweroff reboot suspend lock update
+}
+
+close

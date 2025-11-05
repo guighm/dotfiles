@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ACTIVE_WORKSPACE=$(hyprctl activeworkspace -j)
+
+echo "${ACTIVE_WORKSPACE}" | jq '.id' 

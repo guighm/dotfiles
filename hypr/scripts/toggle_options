@@ -1,0 +1,17 @@
+#!/bin/bash
+
+EWW="/usr/bin/eww"
+
+toggle_options() {
+	SHOW_SYSTEM_OPTIONS=$($EWW get show_system_options)
+	
+	if [[ "$SHOW_SYSTEM_OPTIONS" = "false" ]]; then
+		$EWW update show_system_options=true
+		$EWW open-many poweroff reboot suspend lock update
+	else
+		$EWW update show_system_options=false
+		$EWW close poweroff reboot suspend lock update
+	fi
+}
+
+toggle_options

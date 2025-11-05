@@ -1,0 +1,17 @@
+#!/bin/bash
+
+EWW="/usr/bin/eww"
+
+toggle_volume_controls() {
+	SHOW_VOLUME_CONTROLS=$($EWW get show_volume_controls)
+	
+	if [[ "$SHOW_VOLUME_CONTROLS" = "false" ]]; then
+		$EWW update show_volume_controls=true
+		$EWW open volume_controls
+	else
+		$EWW update show_volume_controls=false
+		$EWW close volume_controls
+	fi
+}
+
+toggle_volume_controls

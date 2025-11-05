@@ -1,0 +1,10 @@
+#!/bin/bash
+
+export UPDATE_SYSTEM="
+sudo pacman -Syu --noconfirm
+yay --noconfirm 
+flutter upgrade
+"
+
+$HOME/.config/eww/scripts/close_system_options
+kitty bash -c "$UPDATE_SYSTEM" &

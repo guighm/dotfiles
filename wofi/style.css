@@ -1,0 +1,51 @@
+* {
+    all: unset;
+    font-family: 'MartianMono Nerd Font Mono';
+    color: white;
+}
+
+window {
+    background-color: #181825;
+    border: 1px solid #6E93CC;
+}
+
+#input {
+    all: unset;
+    margin: 20px 20px 20px 0;
+    padding: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+    border-radius: 20px;
+}
+
+#input image {
+    padding-right: 10px;
+}
+
+#entry {
+    margin: 5px;
+    padding: 10px;
+}
+
+#entry #img {
+    padding: 10px;
+}
+
+#outer-box {
+    margin: 15px;
+}
+
+#text {
+    margin: 5px;
+    padding: 5px;
+}
+
+#entry:selected {
+    background-color: beige;
+}
+
+#entry:selected #text{
+    color: black;
+}

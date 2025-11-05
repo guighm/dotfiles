@@ -1,0 +1,15 @@
+format = " $username[@](bold blue)$hostname $directory[>](bold green) "
+
+[directory]
+truncation_length = 8
+truncation_symbol = '…/'
+style = 'bold white'
+
+[hostname]
+ssh_only = false
+format = '[$hostname](bold blue)'
+
+[username]
+style_user = 'blue bold'
+format = '[$user]($style)'
+show_always = true

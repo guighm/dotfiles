@@ -1,0 +1,88 @@
+/***** VARIABLES *****/
+
+$primary-color: #181825;
+$secondary-color: #6E93CC;
+
+/***** STYLES *****/
+
+* {
+    all: unset;
+    font-family: "MartianMono Nerd Font Mono";
+}
+
+.bar {
+    background-color: $primary-color;
+    border-radius: 50px;
+    border: 1px solid $secondary-color;
+}
+
+.active-workspace {
+    background-color: $secondary-color;
+    color: $primary-color;
+}
+
+.workspace {
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.right-options {
+    margin-right: 30px;
+}
+
+.arch {
+    color: cyan;
+    font-size: 25px;
+}
+
+.workspaces {
+    margin-left: 5px;
+}
+
+.system-option-box {
+    background-color: $primary-color;
+    border: 1px solid $secondary-color;
+    border-radius: 30px;
+    font-size: 70px;
+}
+
+.controls {
+    background-color: $primary-color;
+    border: 1px solid $secondary-color;
+}
+
+.minus,
+.plus {
+    padding: 10px;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+.discharging {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.tempo {
+    padding: 15px 20px 10px 20px;
+    background-color: $primary-color;
+    border: 1px solid $secondary-color;
+}
+
+.hora {
+    font-size: 50px;
+}
+
+.dia {
+    font-size: 30px;
+}

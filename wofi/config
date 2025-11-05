@@ -1,0 +1,11 @@
+[config]
+allow_images=true
+width=500
+height=400
+prompt=Search
+show=drun
+hide_scroll=true
+print_command=true
+insensitive=true
+no_actions=true
+columns=1

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+EWW="/usr/bin/eww"
+
+toggle_time() {
+	SHOW_TIME=$($EWW get show_time)
+	
+	if [[ "$SHOW_TIME" = "false" ]]; then
+		$EWW update show_time=true
+		$EWW open time
+	else
+		$EWW update show_time=false
+		$EWW close time
+	fi
+}
+
+toggle_time
