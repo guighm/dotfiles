@@ -1,0 +1,67 @@
+# Swaylock — Kirby Snowy Night, matching kitty + fuzzel (JetBrainsMono Nerd Font).
+# Nota: swaylock vanilla (v1.8.6) não tem relógio (clock/timestr/datestr);
+# essas opções são do fork swaylock-effects e foram removidas.
+
+# Comportamento
+ignore-empty-password
+show-failed-attempts
+indicator-idle-visible
+daemonize
+
+# Fundo: versão tratada do wallpaper do swaybg — blur + dim + vinheta,
+# para o anel do indicador flutuar num campo calmo. Cor de fallback: ameixa noturna.
+# Regenerar se trocar o wallpaper:
+#   ffmpeg -i ~/wallpapers/wallpaper.jpg -vf "gblur=sigma=22,eq=brightness=-0.16:gamma=0.94:saturation=0.82,vignette=angle=PI/4.5:eval=init" -q:v 2 ~/wallpapers/lock-wallpaper.jpg
+image=~/wallpapers/lock-wallpaper.jpg
+scaling=fill
+color=241f2b
+
+# Fonte igual à do kitty (JetBrainsMono Nerd Font)
+font=JetBrainsMono Nerd Font
+font-size=32
+
+# Layout do teclado enquanto digita (box no topo da tela)
+show-keyboard-layout
+layout-bg-color=2b2431e0       # ameixa translúcida
+layout-border-color=4a4055     # ameixa clara
+layout-text-color=f0e4da       # creme quente
+
+# Indicador: anel fino, raio discreto
+indicator-radius=110
+indicator-thickness=12
+
+## Paleta Kirby Snowy Night ##
+# Estado padrão
+ring-color=f2a5b4          # rosa Kirby (accent, igual ao prompt do fuzzel)
+inside-color=2b2431c0      # ameixa translúcida dentro do anel
+line-color=241f2b00        # contorno invisível por padrão
+text-color=f0e4da          # creme quente
+key-hl-color=8fd6b9        # teal dos olhos: tecla pressionada
+bs-hl-color=e88a9c         # blush do Kirby: backspace
+separator-color=4a4055     # ameixa clara
+
+# Verificando senha
+ring-ver-color=f2a5b4
+inside-ver-color=5e3a49    # rosa escurecido sobre ameixa
+line-ver-color=241f2b00
+text-ver-color=f0e4da
+
+# Senha incorreta / falhas
+ring-wrong-color=e88a9c
+inside-wrong-color=4f2b38  # blush escurecido sobre ameixa
+line-wrong-color=241f2b00
+text-wrong-color=e88a9c
+
+# Limpar com Ctrl+u
+ring-clear-color=92a8dd    # céu nevado
+inside-clear-color=3c4a6b  # azul escurecido sobre ameixa
+line-clear-color=241f2b00
+text-clear-color=92a8dd
+
+# Caps lock ativado
+caps-lock-key-hl-color=f2d99c
+caps-lock-bs-hl-color=e88a9c
+ring-caps-lock-color=f2d99c
+inside-caps-lock-color=584c33  # dourado escurecido sobre ameixa
+line-caps-lock-color=241f2b00
+text-caps-lock-color=f2d99c

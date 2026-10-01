@@ -1,0 +1,64 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "source": "~/.config/fastfetch/kirby.ans",
+    "padding": {
+      "top": 1,
+      "right": 3
+    }
+  },
+  "display": {
+    "separator": "  ",
+    "key": { "width": 15 },
+    "color": { "keys": "#F2D99C" }
+  },
+  "modules": [
+    {
+      "type": "title",
+      "color": {
+        "user": "#F2A5B4",
+        "host": "#F7D9A8",
+        "at": "#6B5F78"
+      }
+    },
+    {
+      "type": "separator",
+      "string": "󰄛 ─────────────────────────",
+      "keyColor": "#4A4055"
+    },
+    { "type": "os",        "key": "󰣇 os" },
+    { "type": "host",      "key": "󰌢 host" },
+    { "type": "kernel",    "key": "󰌽 kernel" },
+    { "type": "uptime",    "key": "󰅐 uptime" },
+    { "type": "packages",  "key": "󰏖 packages" },
+    { "type": "shell",     "key": "󱆃 shell" },
+    { "type": "display",   "key": "󰍹 display" },
+    { "type": "de",        "key": "󰧨 de" },
+    { "type": "wm",        "key": "󱂬 wm" },
+    { "type": "wmtheme",   "key": "󰉼 wmtheme" },
+    { "type": "theme",     "key": "󰏘 theme" },
+    { "type": "icons",     "key": "󰀻 icons" },
+    { "type": "font",      "key": "󰛖 font" },
+    { "type": "cursor",    "key": "󰇀 cursor" },
+    { "type": "terminal",  "key": "󰄛 terminal" },
+    { "type": "terminalfont", "key": "󰛖 ttyfont" },
+    { "type": "cpu",       "key": "󰻠 cpu" },
+    { "type": "gpu",       "key": "󰢮 gpu" },
+    { "type": "memory",    "key": "󰍛 memory" },
+    { "type": "swap",      "key": "󰓡 swap" },
+    { "type": "disk",      "key": "󰋊 disk" },
+    { "type": "battery",   "key": "󰁹 battery" },
+    { "type": "poweradapter", "key": "󰚥 power" },
+    { "type": "localip",   "key": "󰩟 local ip" },
+    { "type": "locale",    "key": "󰗊 locale" },
+    "break",
+    { "type": "colors", "symbol": "circle", "paddingLeft": 3 },
+    { "type": "colors", "symbol": "diamond", "paddingLeft": 3 }
+  ]
+  // Kirby Snowy Night — mesma paleta do kitty current-theme.conf:
+  // ameixa noturna #2B2431 · rosa Kirby #F2A5B4 · dourado do cachecol #F2D99C
+  //
+  // kirby.ans é um ASCII art estilo halftone (contorno pontilhado, olhos e boca
+  // hachurados, blush %%, pés ovais). Cores: contorno #F2A5B4 · pontos #B8768C ·
+  // olhos/boca #4A4055 · blush #DE7E97 · pés #C9526B.
+}
