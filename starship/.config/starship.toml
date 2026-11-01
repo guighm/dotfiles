@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](color_pink)\
+ [](color_pink)\
 $os\
 $username\
 [](bg:color_gold fg:color_pink)\
@@ -28,7 +28,7 @@ $pixi\
 [](fg:color_frost bg:color_blossom)\
 $time\
 [ ](fg:color_blossom)\
-$line_break$character"""
+$line_break $character"""
 
 palette = 'kirby_snowy_night'
 
