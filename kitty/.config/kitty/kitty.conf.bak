@@ -1,9 +1,52 @@
-font_size 18
+font_size 17
+
+# Transparency (text stays fully opaque).
+background_opacity 0.85
 
 
 # BEGIN_KITTY_FONTS
-font_family      family="JetBrainsMono Nerd Font"
+font_family      family="GeistMono Nerd Font"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
 # END_KITTY_FONTS
+
+# BEGIN_KITTY_THEME
+# Spooky Hollow
+include current-theme.conf
+# END_KITTY_THEME
+
+# Tab bar on the left edge (kitty's own rendering, no custom script).
+tab_bar_edge left
+tab_bar_style fade
+
+# Browser-style tab switching
+map ctrl+tab next_tab
+map ctrl+shift+tab previous_tab
+map alt+1 goto_tab 1
+map alt+2 goto_tab 2
+map alt+3 goto_tab 3
+map alt+4 goto_tab 4
+map alt+5 goto_tab 5
+map alt+6 goto_tab 6
+map alt+7 goto_tab 7
+map alt+8 goto_tab 8
+map alt+9 goto_tab 9
+
+# Show the tab's position, so alt+N matches what is on screen.
+tab_title_template "\n {index} · {title}\n"
+
+# Tab bar margin/border. For tab_bar_edge left this is the spacing between
+# the tabs and the top/bottom edges of the strip.
+tab_bar_margin_width 6
+# outer = strip between window edge and tab bar, inner = between tab bar and content.
+tab_bar_margin_height 6 6
+# Margin blends with the tab bar background (same color = "invisible" border).
+tab_bar_margin_color #17232F
+tab_bar_background #17232F
+# 1 alpha = no fade gradient at the tab's edges, so tabs are solid blocks.
+tab_fade 1
+
+tab_title_max_lines 10
+
+tab_title_wrap yes

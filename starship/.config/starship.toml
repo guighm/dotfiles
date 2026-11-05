@@ -30,22 +30,23 @@ $time\
 [ ](fg:color_blossom)\
 $line_break $character"""
 
-palette = 'kirby_snowy_night'
+palette = 'spooky_hollow'
 
-# Paleta gerada de ~/wallpapers/wallpaper.jpg (Kirby na neve), casa com o tema
-# do kitty "Kirby Snowy Night". Texto escuro sobre os pills = color_ink.
-[palettes.kirby_snowy_night]
-color_ink = '#2b2431'        # fundo do kitty (texto sobre os pills)
-color_pink = '#f2a5b4'       # bochecha do Kirby
-color_gold = '#f2d99c'       # cachecol
-color_teal = '#8fd6b9'       # olhos do Kirby
-color_sky = '#92a8dd'        # céu nevado
-color_frost = '#8cc9d9'      # geada
-color_blossom = '#d9a3d7'    # flores da noite
-color_green = '#a8e4cc'
-color_red = '#e88a9c'
-color_purple = '#e4b8e2'
-color_cream = '#f7e6b8'      # brilho do cachecol
+# Paleta gerada de ~/wallpaper.jpg (floresta espectral de Halloween), casa com
+# o tema do kitty. Texto escuro sobre os pills = color_ink.
+[palettes.spooky_hollow]
+color_ink = '#101a26'        # noite profunda das árvores (texto sobre os pills)
+# cores menos vibrantes (saturação -20%, brilho suavizado)
+color_pink = '#a6e6e6'       # brilho do fantasma
+color_gold = '#de8e41'       # abóboras iluminadas
+color_teal = '#9fc756'       # grama luminosa do caminho
+color_sky = '#72becb'        # névoa ciano da floresta
+color_frost = '#8c9fc3'      # azul-louro do crepúsculo
+color_blossom = '#d09fbe'    # flores roxas no musgo
+color_green = '#98cf4a'
+color_red = '#cf614d'
+color_purple = '#9a728f'
+color_cream = '#eee1ac'
 
 [os]
 disabled = false
