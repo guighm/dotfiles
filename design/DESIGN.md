@@ -17,7 +17,7 @@ A arte se divide em três zonas:
 | `bg` | `#1A0F2E` | Fundo principal (roxo-noite das bordas) |
 | `bg.alt` | `#2A1548` | Superfícies elevadas, painéis |
 | `surface` | `#3A1E5C` | Cards, seleções, hovers |
-| `primary` | `#D5232F` | Vermelho do traje — ação, alertas, destaque |
+| `primary` | `#B52330` | Vermelho do traje — ação, alertas, destaque |
 | `primary.dim` | `#8F1B2C` | Vermelho escuro, shadows/borders de erro |
 | `accent` | `#F5A623` | Dourado da explosão — avisos, links, destaque quente |
 | `accent.bright` | `#FFD23F` | Amarelo vivo — badges, cursor, foco |
@@ -32,7 +32,7 @@ A arte se divide em três zonas:
 ## Gradientes
 
 - **Explosão central:** `#D9700F → #F5A623 → #FFD23F → #FFF4D6` (radial, de fora para dentro)
-- **Aura do personagem:** `#D5232F → #C24B8F → #3A1E5C` (vertical, topo para base)
+- **Aura do personagem:** `#B52330 → #C24B8F → #3A1E5C` (vertical, topo para base)
 - **Brilho dos olhos:** `#7FD4EC → #F4EDE1` (ciano esvaindo em branco)
 - **Fundo/teias:** `#2A1548 → #3A1E5C`, com linhas em `#C24B8F` à 30% de opacidade
 
@@ -46,7 +46,7 @@ foreground  #F4EDE1
 cursor      #FFD23F
 
 color0  #1C0E14  (preto)
-color1  #D5232F  (vermelho)
+color1  #B52330  (vermelho)
 color2  #4C9A52  (verde — derivado, contraste com a paleta quente)
 color3  #F5A623  (amarelo)
 color4  #2E7FA8  (azul)
@@ -55,7 +55,7 @@ color6  #7FD4EC  (ciano)
 color7  #F4EDE1  (branco)
 
 color8   #3A1E5C  (cinza-branco escuro → roxo claro)
-color9   #E8535E  (vermelho claro)
+color9   #C8535F  (vermelho claro)
 color10  #6FBF76  (verde claro)
 color11  #FFD23F  (amarelo claro)
 color12  #5FA8D3  (azul claro)

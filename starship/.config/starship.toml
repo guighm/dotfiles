@@ -34,18 +34,18 @@ palette = 'brand_new_day'
 
 # Paleta gerada de wallpapers/spiderman-brand-new-day.jpg (ver design/DESIGN.md),
 # casa com o tema do kitty. Texto escuro sobre os pills = color_ink
-# (cinza-ninja da arte, feito para texto sobre claro).
+# (noite profunda das bordas da arte, feito para texto sobre claro).
 [palettes.brand_new_day]
-color_ink = '#1C0E14'        # noite profunda das árvores (texto sobre os pills)
-color_pink = '#C24B8F'       # brilho do fantasma
-color_gold = '#F5A623'       # abóboras iluminadas
-color_teal = '#2E7FA8'       # grama luminosa do caminho
-color_sky = '#7FD4EC'        # névoa ciano da floresta
-color_frost = '#B8A9C9'      # azul-louro do crepúsculo
-color_blossom = '#E07AB8'    # flores roxas no musgo
+color_ink = '#1C0E14'        # noite profunda das bordas do wallpaper (texto sobre os pills)
+color_pink = '#C24B8F'       # teias em tom de vinho/rosa ao redor do personagem
+color_gold = '#F5A623'       # explosão dourada atrás do personagem
+color_teal = '#2E7FA8'       # azul sombra do traje/fundo frio
+color_sky = '#7FD4EC'        # brilho ciano do olho do personagem
+color_frost = '#B8A9C9'      # lilás apagado das teias contra a noite
+color_blossom = '#E07AB8'    # glow magenta/rosa da arte
 color_green = '#6FBF76'
-color_red = '#D5232F'
-color_red_bright = '#E8535E'
+color_red = '#B52330'
+color_red_bright = '#C8535F'
 color_purple = '#C24B8F'
 color_cream = '#F4EDE1'
 
