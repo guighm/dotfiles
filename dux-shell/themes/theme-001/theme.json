@@ -1,0 +1,142 @@
+{
+  "id": "spidermanBrandNewDay",
+  "name": "Spider-Man: Brand New Day",
+  "version": "1.0.0",
+  "author": "Guilherme Moraes",
+  "description": "Midnight purple, golden explosion and magenta webs — extracted from the wallpaper artwork",
+  "dark": {},
+  "light": {},
+  "variants": {
+    "type": "multi",
+    "defaults": {
+      "dark": {
+        "accent": "spider",
+        "flavor": "brand-new-day"
+      },
+      "light": {
+        "accent": "spider",
+        "flavor": "dawn"
+      }
+    },
+    "flavors": [
+      {
+        "id": "brand-new-day",
+        "name": "Brand New Day",
+        "dark": {
+          "surface": "#2A1548",
+          "surfaceText": "#F4EDE1",
+          "surfaceVariant": "#3A1E5C",
+          "surfaceVariantText": "#B8A9C9",
+          "background": "#1A0F2E",
+          "backgroundText": "#F4EDE1",
+          "outline": "#5E4784",
+          "surfaceContainerLowest": "#140A24",
+          "surfaceContainerLow": "#1E1136",
+          "surfaceContainer": "#2A1548",
+          "surfaceContainerHigh": "#3A1E5C",
+          "surfaceContainerHighest": "#4C2E74",
+          "error": "#EC6A76",
+          "warning": "#F5A623",
+          "info": "#7FD4EC"
+        },
+        "light": {}
+      },
+      {
+        "id": "dawn",
+        "name": "Dawn",
+        "dark": {},
+        "light": {
+          "surface": "#FFF8E7",
+          "surfaceText": "#1C0E14",
+          "surfaceVariant": "#F7EAD0",
+          "surfaceVariantText": "#5D4E75",
+          "background": "#FFF4D6",
+          "backgroundText": "#1C0E14",
+          "outline": "#9C8CB4",
+          "surfaceContainerLowest": "#FFFDF5",
+          "surfaceContainerLow": "#FBEFD9",
+          "surfaceContainer": "#F9E8CC",
+          "surfaceContainerHigh": "#F1DDB9",
+          "surfaceContainerHighest": "#E9D2A9",
+          "error": "#8F1B2C",
+          "warning": "#D9700F",
+          "info": "#2E7FA8"
+        }
+      }
+    ],
+    "accents": [
+      {
+        "id": "spider",
+        "name": "Spider",
+        "brand-new-day": {
+          "primary": "#B52330",
+          "primaryText": "#F4EDE1",
+          "primaryContainer": "#8F1B2C",
+          "secondary": "#C8535F",
+          "surfaceTint": "#30182F"
+        },
+        "dawn": {
+          "primary": "#B52330",
+          "primaryText": "#FFF4D6",
+          "primaryContainer": "#F7D3D6",
+          "secondary": "#C8535F",
+          "surfaceTint": "#FFF4D6"
+        }
+      },
+      {
+        "id": "gold",
+        "name": "Gold",
+        "brand-new-day": {
+          "primary": "#F5A623",
+          "primaryText": "#1C0E14",
+          "primaryContainer": "#7A4A12",
+          "secondary": "#FFD23F",
+          "surfaceTint": "#30243A"
+        },
+        "dawn": {
+          "primary": "#C5600A",
+          "primaryText": "#FFF8E7",
+          "primaryContainer": "#FFE9C4",
+          "secondary": "#D9700F",
+          "surfaceTint": "#FFF4D6"
+        }
+      },
+      {
+        "id": "cyan-eyes",
+        "name": "Cyan Eyes",
+        "brand-new-day": {
+          "primary": "#7FD4EC",
+          "primaryText": "#1C0E14",
+          "primaryContainer": "#234F63",
+          "secondary": "#5FA8D3",
+          "surfaceTint": "#243048"
+        },
+        "dawn": {
+          "primary": "#2E7FA8",
+          "primaryText": "#FFF4D6",
+          "primaryContainer": "#CDE8F2",
+          "secondary": "#5FA8D3",
+          "surfaceTint": "#FFF4D6"
+        }
+      },
+      {
+        "id": "web-magenta",
+        "name": "Web Magenta",
+        "brand-new-day": {
+          "primary": "#E07AB8",
+          "primaryText": "#1C0E14",
+          "primaryContainer": "#5E2A4B",
+          "secondary": "#C24B8F",
+          "surfaceTint": "#2F1846"
+        },
+        "dawn": {
+          "primary": "#A83C72",
+          "primaryText": "#FFF4D6",
+          "primaryContainer": "#F5D3E6",
+          "secondary": "#C24B8F",
+          "surfaceTint": "#FFF4D6"
+        }
+      }
+    ]
+  }
+}
