@@ -1,7 +1,7 @@
 {
   "id": "spidermanBrandNewDay",
   "name": "Spider-Man: Brand New Day",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Guilherme Moraes",
   "description": "Midnight purple, golden explosion and magenta webs — extracted from the wallpaper artwork",
   "dark": {},
@@ -23,21 +23,21 @@
         "id": "brand-new-day",
         "name": "Brand New Day",
         "dark": {
-          "surface": "#2A1548",
-          "surfaceText": "#F4EDE1",
-          "surfaceVariant": "#3A1E5C",
-          "surfaceVariantText": "#B8A9C9",
-          "background": "#1A0F2E",
-          "backgroundText": "#F4EDE1",
-          "outline": "#5E4784",
-          "surfaceContainerLowest": "#140A24",
-          "surfaceContainerLow": "#1E1136",
-          "surfaceContainer": "#2A1548",
-          "surfaceContainerHigh": "#3A1E5C",
-          "surfaceContainerHighest": "#4C2E74",
-          "error": "#EC6A76",
-          "warning": "#F5A623",
-          "info": "#7FD4EC"
+          "surface": "#33244E",
+          "surfaceText": "#F1ECDF",
+          "surfaceVariant": "#3D2D5C",
+          "surfaceVariantText": "#C9BCDC",
+          "background": "#251739",
+          "backgroundText": "#F1ECDF",
+          "outline": "#7A63A4",
+          "surfaceContainerLowest": "#1D1130",
+          "surfaceContainerLow": "#2B1C42",
+          "surfaceContainer": "#352550",
+          "surfaceContainerHigh": "#3F2E5F",
+          "surfaceContainerHighest": "#4C3A72",
+          "error": "#F08C96",
+          "warning": "#F8B356",
+          "info": "#93DCEF"
         },
         "light": {}
       },
@@ -69,11 +69,11 @@
         "id": "spider",
         "name": "Spider",
         "brand-new-day": {
-          "primary": "#B52330",
-          "primaryText": "#F4EDE1",
-          "primaryContainer": "#8F1B2C",
-          "secondary": "#C8535F",
-          "surfaceTint": "#30182F"
+          "primary": "#DD5C67",
+          "primaryText": "#200F16",
+          "primaryContainer": "#94262F",
+          "secondary": "#E87E88",
+          "surfaceTint": "#33244E"
         },
         "dawn": {
           "primary": "#B52330",
@@ -87,11 +87,11 @@
         "id": "gold",
         "name": "Gold",
         "brand-new-day": {
-          "primary": "#F5A623",
-          "primaryText": "#1C0E14",
-          "primaryContainer": "#7A4A12",
-          "secondary": "#FFD23F",
-          "surfaceTint": "#30243A"
+          "primary": "#F8B356",
+          "primaryText": "#26160A",
+          "primaryContainer": "#8F5E1F",
+          "secondary": "#FFDA68",
+          "surfaceTint": "#33244E"
         },
         "dawn": {
           "primary": "#C5600A",
@@ -105,11 +105,11 @@
         "id": "cyan-eyes",
         "name": "Cyan Eyes",
         "brand-new-day": {
-          "primary": "#7FD4EC",
-          "primaryText": "#1C0E14",
-          "primaryContainer": "#234F63",
-          "secondary": "#5FA8D3",
-          "surfaceTint": "#243048"
+          "primary": "#93DCEF",
+          "primaryText": "#0F2630",
+          "primaryContainer": "#3B6E80",
+          "secondary": "#76B7DC",
+          "surfaceTint": "#33244E"
         },
         "dawn": {
           "primary": "#2E7FA8",
@@ -123,11 +123,11 @@
         "id": "web-magenta",
         "name": "Web Magenta",
         "brand-new-day": {
-          "primary": "#E07AB8",
-          "primaryText": "#1C0E14",
-          "primaryContainer": "#5E2A4B",
-          "secondary": "#C24B8F",
-          "surfaceTint": "#2F1846"
+          "primary": "#E9A2CF",
+          "primaryText": "#2A1122",
+          "primaryContainer": "#75365B",
+          "secondary": "#D0739F",
+          "surfaceTint": "#33244E"
         },
         "dawn": {
           "primary": "#A83C72",
