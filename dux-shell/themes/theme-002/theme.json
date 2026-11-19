@@ -1,0 +1,142 @@
+{
+  "id": "mandalorianAndGrogu",
+  "name": "The Mandalorian & Grogu",
+  "version": "1.0.0",
+  "author": "Guilherme Moraes",
+  "description": "Desert gold, fire halo and beskar shadows — extracted from the wallpaper artwork",
+  "dark": {},
+  "light": {},
+  "variants": {
+    "type": "multi",
+    "defaults": {
+      "dark": {
+        "accent": "desert-gold",
+        "flavor": "beskar-night"
+      },
+      "light": {
+        "accent": "desert-gold",
+        "flavor": "desert-dawn"
+      }
+    },
+    "flavors": [
+      {
+        "id": "beskar-night",
+        "name": "Beskar Night",
+        "dark": {
+          "surface": "#3A2A1A",
+          "surfaceText": "#F3E9C8",
+          "surfaceVariant": "#4C3524",
+          "surfaceVariantText": "#C9B285",
+          "background": "#261C12",
+          "backgroundText": "#F3E9C8",
+          "outline": "#B69753",
+          "surfaceContainerLowest": "#1A130C",
+          "surfaceContainerLow": "#2A211A",
+          "surfaceContainer": "#3A2A1A",
+          "surfaceContainerHigh": "#4C3524",
+          "surfaceContainerHighest": "#5C4530",
+          "error": "#E86460",
+          "warning": "#F07822",
+          "info": "#A6C2E4"
+        },
+        "light": {}
+      },
+      {
+        "id": "desert-dawn",
+        "name": "Desert Dawn",
+        "dark": {},
+        "light": {
+          "surface": "#F7EED2",
+          "surfaceText": "#1A130C",
+          "surfaceVariant": "#EFE2BC",
+          "surfaceVariantText": "#6E5A33",
+          "background": "#FBF9E3",
+          "backgroundText": "#1A130C",
+          "outline": "#B69753",
+          "surfaceContainerLowest": "#FFFDF4",
+          "surfaceContainerLow": "#F9F2DB",
+          "surfaceContainer": "#F7EED2",
+          "surfaceContainerHigh": "#F0E3BD",
+          "surfaceContainerHighest": "#E7D6A6",
+          "error": "#B23A37",
+          "warning": "#C2660F",
+          "info": "#5D6E87"
+        }
+      }
+    ],
+    "accents": [
+      {
+        "id": "desert-gold",
+        "name": "Desert Gold",
+        "beskar-night": {
+          "primary": "#E4CF6C",
+          "primaryText": "#1A130C",
+          "primaryContainer": "#8A6B1F",
+          "secondary": "#F6E085",
+          "surfaceTint": "#261C12"
+        },
+        "desert-dawn": {
+          "primary": "#A07C17",
+          "primaryText": "#FBF9E3",
+          "primaryContainer": "#F5E7B0",
+          "secondary": "#B69753",
+          "surfaceTint": "#FBF9E3"
+        }
+      },
+      {
+        "id": "halo-orange",
+        "name": "Halo Orange",
+        "beskar-night": {
+          "primary": "#F07822",
+          "primaryText": "#1A130C",
+          "primaryContainer": "#AB4C1C",
+          "secondary": "#F6E085",
+          "surfaceTint": "#261C12"
+        },
+        "desert-dawn": {
+          "primary": "#C05A10",
+          "primaryText": "#FBF9E3",
+          "primaryContainer": "#F8DCC2",
+          "secondary": "#AB4C1C",
+          "surfaceTint": "#FBF9E3"
+        }
+      },
+      {
+        "id": "visor-steel",
+        "name": "Visor Steel",
+        "beskar-night": {
+          "primary": "#A6C2E4",
+          "primaryText": "#101826",
+          "primaryContainer": "#45607F",
+          "secondary": "#C9DBF0",
+          "surfaceTint": "#261C12"
+        },
+        "desert-dawn": {
+          "primary": "#46618A",
+          "primaryText": "#FBF9E3",
+          "primaryContainer": "#DCE6F2",
+          "secondary": "#5D6E87",
+          "surfaceTint": "#FBF9E3"
+        }
+      },
+      {
+        "id": "grogu",
+        "name": "Grogu",
+        "beskar-night": {
+          "primary": "#97A065",
+          "primaryText": "#14160B",
+          "primaryContainer": "#5A6338",
+          "secondary": "#AFB78C",
+          "surfaceTint": "#261C12"
+        },
+        "desert-dawn": {
+          "primary": "#6E7544",
+          "primaryText": "#FBF9E3",
+          "primaryContainer": "#E6E9CE",
+          "secondary": "#8A9154",
+          "surfaceTint": "#FBF9E3"
+        }
+      }
+    ]
+  }
+}
