@@ -1,15 +1,15 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
- [](color_amber)\
+[](color_flame)\
 $os\
 $username\
-[](bg:color_cloud fg:color_amber)\
+[](bg:color_cloud fg:color_flame)\
 $directory\
-[](fg:color_cloud bg:color_petrol)\
+[](fg:color_cloud bg:color_petrol)\
 $git_branch\
 $git_status\
-[](fg:color_petrol bg:color_sabre)\
+[](fg:color_petrol bg:color_sabre)\
 $c\
 $cpp\
 $rust\
@@ -21,67 +21,70 @@ $java\
 $kotlin\
 $haskell\
 $python\
-[](fg:color_sabre bg:color_olive)\
+[](fg:color_sabre bg:color_surface)\
 $docker_context\
 $conda\
 $pixi\
-[](fg:color_olive bg:color_flame)\
+[](fg:color_surface bg:color_deep)\
 $time\
-[ ](fg:color_flame)\
-$line_break $character"""
+[ ](fg:color_deep)\
+$line_break$character"""
 
 palette = 'skywalker_sunset'
 
 # Paleta gerada de wallpapers/star-wars-skywalker-sunset.jpg (ver design/DESIGN.md).
-# Cena noturna: pills claras de nuvem/âmbar sobre fundo teal, com o ciano do sabre
-# como nota fria de apoio. Texto escuro sobre os pills = color_ink (teal-negro,
-# feito para texto sobre claro); único pill escuro (git) usa color_cream.
+# Cena noturna teal: os pills abrem em fogo (pluma do Vader), o diretório é a
+# nuvem creme (destaque principal), o git mergulha no azul-petróleo da cidade e
+# as linguagens usam o ciano do sabre — nota fria de apoio, nunca o destaque.
+# O pill final do relógio fecha no maroon queimado da base da pluma.
+# Pills claros usam color_ink (teal-negro, feito para texto sobre claro);
+# pills escuros usam color_cream (creme da moldura).
 [palettes.skywalker_sunset]
 color_ink = '#0A191E'          # teal-negro — texto sobre os pills claros
-color_amber = '#CDB473'        # âmbar-oliva das nuvens sombreadas
+color_cream = '#F2D9A8'        # creme da moldura — texto sobre os pills escuros
+color_flame = '#F18321'        # laranja-fogo da pluma do Vader — accent
 color_cloud = '#F7DC83'        # creme-amarelo das nuvens — destaque principal
-color_petrol = '#0C546C'       # azul-petróleo dos prédios escuros — único pill escuro
-color_sabre = '#20B5DC'        # ciano do sabre de luz — nota fria de apoio
-color_olive = '#B7AD7C'        # azeitona das nuvens sombreadas
-color_flame = '#F18321'        # laranja-fogo da pluma do Vader
-color_red = '#D62026'          # vermelho dos logos imperiais/rebeldes
-color_red_bright = '#F52231'   # vermelho vivo das chamas/X-wings — erro em destaque
+color_petrol = '#0C546C'       # azul-petróleo dos prédios escuros — pill do git
+color_sabre = '#20B5DC'        # ciano do sabre de luz — linguagens
+color_surface = '#1C3C44'      # Estrela da Morte/água escura — containers
+color_deep = '#961824'         # maroon queimado da base da pluma — pill do relógio
+color_olive = '#B7AD7C'        # azeitona das nuvens sombreadas — prompt de sucesso
+color_red_bright = '#F52231'   # vermelho vivo das chamas/X-wings — erro
 color_coral = '#E47C66'        # coral da pluma, derivado — vimcmd replace
-color_cream = '#F2D9A8'        # creme da moldura — texto sobre o pill escuro
 
 [os]
 disabled = false
-style = "bg:color_amber fg:color_ink"
+style = "bg:color_flame fg:color_ink"
 
 [os.symbols]
-Windows = "󰍲"
-Ubuntu = "󰕈"
-SUSE = ""
-Raspbian = "󰐿"
-Mint = "󰣭"
-Macos = "󰀵"
-Manjaro = ""
-Linux = "󰌽"
-Gentoo = "󰣨"
-Fedora = "󰣛"
-Alpine = ""
-Amazon = ""
-Android = ""
-AOSC = ""
-Arch = "󰣇"
-Artix = "󰣇"
-EndeavourOS = ""
-CentOS = ""
-Debian = "󰣚"
-Redhat = "󱄛"
-RedHatEnterprise = "󱄛"
-Pop = ""
+Windows = "󰍲 "
+Ubuntu = "󰕈 "
+SUSE = " "
+Raspbian = "󰐿 "
+Mint = "󰣭 "
+Macos = "󰀵 "
+Manjaro = " "
+Linux = "󰌽 "
+Gentoo = "󰣨 "
+Fedora = "󰣛 "
+Alpine = " "
+Amazon = " "
+Android = " "
+AOSC = " "
+Arch = "󰣇 "
+Artix = "󰣇 "
+EndeavourOS = " "
+CentOS = " "
+Debian = "󰣚 "
+Redhat = "󱄛 "
+RedHatEnterprise = "󱄛 "
+Pop = " "
 
 [username]
 show_always = true
-style_user = "bg:color_amber fg:color_ink"
-style_root = "bg:color_amber fg:color_ink"
-format = '[ $user ]($style)'
+style_user = "bg:color_flame fg:color_ink"
+style_root = "bg:color_flame fg:color_ink"
+format = '[$user ]($style)'
 
 [directory]
 style = "fg:color_ink bg:color_cloud"
@@ -91,13 +94,13 @@ truncation_symbol = "…/"
 
 [directory.substitutions]
 "Documents" = "󰈙 "
-"Downloads" = ""
+"Downloads" = " "
 "Music" = "󰝚 "
-"Pictures" = ""
+"Pictures" = " "
 "Developer" = "󰲋 "
 
 [git_branch]
-symbol = ""
+symbol = ""
 style = "bg:color_petrol"
 format = '[[ $symbol $branch ](fg:color_cream bg:color_petrol)]($style)'
 
@@ -106,87 +109,96 @@ style = "bg:color_petrol"
 format = '[[($all_status$ahead_behind )](fg:color_cream bg:color_petrol)]($style)'
 
 [nodejs]
-symbol = ""
+symbol = ""
 style = "bg:color_sabre"
 format = '[[ $symbol( $version) ](fg:color_ink bg:color_sabre)]($style)'
 
 [bun]
-symbol = ""
+symbol = ""
 style = "bg:color_sabre"
 format = '[[ $symbol( $version) ](fg:color_ink bg:color_sabre)]($style)'
 
 [c]
-symbol = " "
+symbol = " "
 style = "bg:color_sabre"
 format = '[[ $symbol( $version) ](fg:color_ink bg:color_sabre)]($style)'
 
 [cpp]
-symbol = " "
+symbol = " "
 style = "bg:color_sabre"
 format = '[[ $symbol( $version) ](fg:color_ink bg:color_sabre)]($style)'
 
 [rust]
-symbol = ""
+symbol = ""
 style = "bg:color_sabre"
 format = '[[ $symbol( $version) ](fg:color_ink bg:color_sabre)]($style)'
 
 [golang]
-symbol = ""
+symbol = ""
 style = "bg:color_sabre"
 format = '[[ $symbol( $version) ](fg:color_ink bg:color_sabre)]($style)'
 
 [php]
-symbol = ""
+symbol = ""
 style = "bg:color_sabre"
 format = '[[ $symbol( $version) ](fg:color_ink bg:color_sabre)]($style)'
 
 [java]
-symbol = ""
+symbol = ""
 style = "bg:color_sabre"
 format = '[[ $symbol( $version) ](fg:color_ink bg:color_sabre)]($style)'
 
+[jj_bookmark]
+symbol = ""
+style = "bg:color_petrol"
+format = '[[ $symbol $bookmark(@$remote)$diverged( \\(+$overflow_count others\\)) ](fg:color_cream bg:color_petrol)]($style)'
+
+[jj_status]
+style = "bg:color_petrol"
+format = '[[($all )](fg:color_cream bg:color_petrol)]($style)'
+
 [kotlin]
-symbol = ""
+symbol = ""
 style = "bg:color_sabre"
 format = '[[ $symbol( $version) ](fg:color_ink bg:color_sabre)]($style)'
 
 [haskell]
-symbol = ""
+symbol = ""
 style = "bg:color_sabre"
 format = '[[ $symbol( $version) ](fg:color_ink bg:color_sabre)]($style)'
 
 [python]
-symbol = ""
+symbol = ""
 style = "bg:color_sabre"
 format = '[[ $symbol( $version) ](fg:color_ink bg:color_sabre)]($style)'
 
 [docker_context]
-symbol = ""
-style = "bg:color_olive"
-format = '[[ $symbol( $context) ](fg:color_ink bg:color_olive)]($style)'
+symbol = ""
+style = "bg:color_surface"
+format = '[[ $symbol( $context) ](fg:color_cream bg:color_surface)]($style)'
 
 [conda]
-style = "bg:color_olive"
-format = '[[ $symbol( $environment) ](fg:color_ink bg:color_olive)]($style)'
+style = "bg:color_surface"
+format = '[[ $symbol( $environment) ](fg:color_cream bg:color_surface)]($style)'
 
 [pixi]
-style = "bg:color_olive"
-format = '[[ $symbol( $version)( $environment) ](fg:color_ink bg:color_olive)]($style)'
+style = "bg:color_surface"
+format = '[[ $symbol( $version)( $environment) ](fg:color_cream bg:color_surface)]($style)'
 
 [time]
 disabled = false
 time_format = "%R"
-style = "bg:color_flame"
-format = '[[  $time ](fg:color_ink bg:color_flame)]($style)'
+style = "bg:color_deep"
+format = '[[  $time ](fg:color_cream bg:color_deep)]($style)'
 
 [line_break]
 disabled = false
 
 [character]
 disabled = false
-success_symbol = '[](bold fg:color_olive)'
-error_symbol = '[](bold fg:color_red_bright)'
-vimcmd_symbol = '[](bold fg:color_olive)'
-vimcmd_replace_one_symbol = '[](bold fg:color_coral)'
-vimcmd_replace_symbol = '[](bold fg:color_coral)'
-vimcmd_visual_symbol = '[](bold fg:color_cream)'
+success_symbol = '[](bold fg:color_olive)'
+error_symbol = '[](bold fg:color_red_bright)'
+vimcmd_symbol = '[](bold fg:color_olive)'
+vimcmd_replace_one_symbol = '[](bold fg:color_coral)'
+vimcmd_replace_symbol = '[](bold fg:color_coral)'
+vimcmd_visual_symbol = '[](bold fg:color_cloud)'
