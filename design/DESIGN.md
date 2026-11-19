@@ -1,74 +1,87 @@
-# Paleta de Cores — The Mandalorian & Grogu
+# Paleta de Cores — Star Wars: Skywalker Sunset
 
-Gerada a partir de `wallpapers/mandalorian-and-grogu.jpg`, com amostragem real dos pixels.
+Gerada a partir de `wallpapers/star-wars-skywalker-sunset.jpg`, com amostragem real dos pixels.
 
 ## Referência visual
 
-A arte é clara e quente — impressiona em dourado — e se divide em quatro zonas:
+A arte é escura, noturna e quente no centro — o oposto estrutural do tema anterior.
+O céu teal quase preto (`#11242A`, ~30% dos pixels) domina a cena e se divide em quatro zonas:
 
-1. **Fundo** — deserto dourado-oliva, de bronze escurro nos cantos (`#B69753`) a dourado central (`#E4CF6C`) e creme nas nuvens (`#FBF9E3`).
-2. **Centro** — halo laranja-fogo atrás dos personagens (`#F07822`, queima em `#AB4C1C`), com streaks das naves.
-3. **Personagens** — beskar cinza-quente das sombras (`#2A211A` → metal `#BBB2A6`), poncho marrom e Grogu verde-sálvia.
-4. **Detalhes** — o reflexo azul-aço do visor (`#B6C8E1`) e vermelho dos X-wings (`#DC4F4C`) são as únicas notas frias/sinchas — por isso se destacam.
+1. **Fundo** — céu noturno teal (`#11242A` → `#12252B`) com silhuetas quase pretas
+   (`#0D2728`); moldura creme (`#F2D9A6`) com logos imperiais/rebeldes em vermelho
+   (`#D62026`) nos cantos e X-wings no alto (`#F52231`).
+2. **Centro** — silhueta do Vader em chamas: âmbar do topo (`#FBD260`) → laranja-fogo
+   (`#F18321`) → vermelho (`#EF2721`), queimando em maroon profundo na base
+   (`#961824`); o sabre de luz cruza a cena em azul-ciano (`#20B5DC`) com brilho
+   branco-glacial (`#F4FBF4`), e o halo atrás do Luke repete o âmbar (`#FBBB4A`).
+3. **Cidade/água** — skyline e oceano em ciano-teal (`#16A3BF`, água `#1A89A4`),
+   aprofundando em azul-petróleo (`#0C546C`); a Estrela da Morte é teal escuro (`#15404A`).
+4. **Detalhes** — nuvens creme-amarelas (`#F7DC83`) com sombra azeitona (`#B7AD7C`),
+   título "STAR WARS" em creme sálvia (`#EBECBC`).
+
+Aqui as notas frias são centrais — sabre, cidade, água —, invertendo o esquema
+do tema Mandalorian, onde o azul era exceção (0,09% dos pixels).
 
 ## Paleta principal
 
 | Token | Hex | Uso |
 |---|---|---|
-| `bg` | `#261C12` | Fundo principal (sombra do beskar/poncho) |
-| `bg.alt` | `#3A2A1A` | Superfícies elevadas, painéis (`#3C251A` das sombras do halo) |
-| `surface` | `#4C3524` | Cards, seleções, hovers (`#503B33` da armadura) |
-| `primary` | `#E4CF6C` | Dourado-oliva do deserto — ação, destaque principal |
-| `primary.dim` | `#B69753` | Bronze dos cantos, shadows/borders |
-| `accent` | `#F07822` | Laranja-fogo do halo — avisos, links, energia |
-| `accent.bright` | `#F6E085` | Âmbar-creme do anel do halo — cursor, badges, foco |
-| `accent.deep` | `#AB4C1C` | Laranja-queimado do halo, gradientes quentes |
-| `secondary` | `#A6C2E4` | Azul-aço do visor — informações, status, nota fria |
-| `secondary.dim` | `#5D6E87` | Azul-petróleo das sombras do capacete |
-| `grogu` | `#97A065` | Verde-sálvia do Grogu — decorative, tags |
-| `red` | `#DC4F4C` | Vermelho dos X-wings — erros, emergência |
-| `text` | `#F3E9C8` | Texto principal (creme das nuvens) |
-| `text.dim` | `#C9B285` | Texto secundário (dourado apagado) |
-| `ink` | `#1A130C` | Marrom-negro — texto sobre claro |
+| `bg` | `#0D1E24` | Fundo principal (silhueta/escuridão da cena) |
+| `bg.alt` | `#14272E` | Superfícies elevadas, painéis (variação do céu) |
+| `surface` | `#1C3C44` | Cards, seleções, hovers (Estrela da Morte/água escura) |
+| `primary` | `#F7DC83` | Amarelo-creme das nuvens — ação, destaque principal |
+| `primary.dim` | `#CDB473` | Âmbar-oliva das nuvens sombreadas, shadows/borders |
+| `accent` | `#F18321` | Laranja-fogo da pluma do Vader — avisos, links, energia |
+| `accent.bright` | `#FBD260` | Âmbar do halo do Luke — cursor, badges, foco |
+| `accent.deep` | `#B21A29` | Vermelho-queimado da base da pluma, gradientes |
+| `secondary` | `#20B5DC` | Ciano do sabre — informações, status, nota fria |
+| `secondary.dim` | `#0C546C` | Azul-petróleo dos prédios escuros |
+| `olive` | `#B7AD7C` | Azeitona das nuvens sombreadas — decorative, tags |
+| `red` | `#D62026` | Vermelho dos logos/X-wings — erros, emergência |
+| `text` | `#F2D9A8` | Texto principal (creme da moldura) |
+| `text.dim` | `#79989A` | Texto secundário (névoa cinza-teal) |
+| `ink` | `#0A191E` | Teal-negro — texto sobre claro |
 
 ## Gradientes
 
-- **Deserto:** `#B69753 → #E4CF6C → #F6E085 → #FBF9E3` (radial, dos cantos para o centro)
-- **Halo dos personagens:** `#AB4C1C → #F07822 → #F6E085` (radial, centro para borda)
-- **Beskar:** `#2A211A → #BBB2A6 → #FBF9E3` (diagonal, sombra para brilho do metal)
-- **Reflexo do visor:** `#5D6E87 → #B6C8E1 → #C7DCF3` (sombra para brilho)
-- **Fundo/dunas:** `#3A2A1A → #4C3524`, com textura em `#E4CF6C` a 25% de opacidade
+- **Pluma do Vader:** `#FBD260 → #F18321 → #EF2721 → #961824` (vertical, topo para a base)
+- **Sabre de luz:** `#F4FBF4 → #20B5DC → #0B697A` (core para o halo)
+- **Halo do Luke:** `#F5E79B → #FBD260 → #F18321` (radial, centro para borda)
+- **Crepúsculo da cidade:** `#0C546C → #16A3BF → #1A89A4` (prédios escuros → água)
+- **Nuvens:** `#B7AD7C → #CDB473 → #F7DC83` (sombra azeitona → creme)
+- **Céu:** `#0D2628 → #11242A`, com estrelas em `#F2D9A8`
 
 ## Mapeamento terminal (16 cores)
 
 Útil para temas de terminal, Waybar, GTK, etc.
 
 ```
-background  #261C12
-foreground  #F3E9C8
-cursor      #F6E085
+background  #0D1E24
+foreground  #F2D9A8
+cursor      #20B5DC  (sabre de luz)
 
-color0  #1A130C  (preto — ink)
-color1  #DC4F4C  (vermelho — naves)
-color2  #97A065  (verde — Grogu)
-color3  #E4CF6C  (amarelo — deserto)
-color4  #5D6E87  (azul — sombra do visor)
-color5  #C77763  (magenta — rosa-terracota derivado)
-color6  #A6C2E4  (ciano — visor)
-color7  #F3E9C8  (branco — creme)
+color0  #0B181D  (preto — silhueta funda)
+color1  #D62026  (vermelho — logos/naves)
+color2  #B7AD7C  (verde — azeitona das nuvens)
+color3  #F7DC83  (amarelo — nuvens creme)
+color4  #1C7D86  (azul — olho da Estrela da Morte)
+color5  #E47C66  (magenta — coral da pluma, derivado)
+color6  #16A3BF  (ciano — cidade/água)
+color7  #F2D9A8  (branco — creme da moldura)
 
-color8   #4C3524  (cinza claro — umber)
-color9   #F07822  (vermelho claro — laranja do halo)
-color10  #AFB78C  (verde claro — sálvia)
-color11  #F6E085  (amarelo claro — anel do halo)
-color12  #B6C8E1  (azul claro — metal do visor)
-color13  #E09B8F  (magenta claro — terracota clara)
-color14  #C9DBF0  (ciano claro)
-color15  #FBF9E3  (branco)
+color8   #1C3C44  (cinza claro — Estrela da Morte)
+color9   #F52231  (vermelho claro — chamas/X-wings)
+color10  #B1AB83  (verde claro — azeitona clara)
+color11  #F9E473  (amarelo claro — nuvens vivas)
+color12  #8AD8E8  (azul claro — brilho do sabre, derivado)
+color13  #EBAB8C  (magenta claro — coral claro, derivado)
+color14  #20B5DC  (ciano claro — sabre)
+color15  #F4FBF4  (branco — core do sabre)
 ```
 
-> `color5`/`color13` (magenta) não existem literalmente na arte;
-> foram derivados do vermelho dos X-wings puxado para rosa-terracota
-> para manter o esquema ANSI completo dentro da mesma temperatura quente.
-> As únicas notas frias da arte são o visor do Mandalorian (0,09% dos pixels) —
-> usadas com parcimônia: status/info apenas, nunca como cor de destaque principal.
+> `color5`/`color13` (magenta) e `color12` (azul claro) não existem literalmente
+> como bloco de cor na arte — derivados das âncoras reais: `#E47C66` do meio
+> `#D62026 ↔ #F2D9A6`, `#EBAB8C` do meio `#E47C66 ↔ #F2D9A6` e `#8AD8E8` do meio
+> `#20B5DC ↔ #F4FBF4`, mantendo o esquema ANSI completo na mesma temperatura.
+> O verde ANSI é a azeitona das nuvens sombreadas; o ciano, agora protagonista
+> (sabre, cidade, água), deve continuar nota fria de apoio — nunca destaque principal.
