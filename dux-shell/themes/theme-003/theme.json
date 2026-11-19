@@ -1,0 +1,142 @@
+{
+  "id": "skywalkerSunset",
+  "name": "Star Wars: Skywalker Sunset",
+  "version": "1.0.0",
+  "author": "Guilherme Moraes",
+  "description": "Night teal sky, burning sunset and sabre cyan — extracted from the wallpaper artwork",
+  "dark": {},
+  "light": {},
+  "variants": {
+    "type": "multi",
+    "defaults": {
+      "dark": {
+        "accent": "cloud-cream",
+        "flavor": "sunset-night"
+      },
+      "light": {
+        "accent": "cloud-cream",
+        "flavor": "sunset-dawn"
+      }
+    },
+    "flavors": [
+      {
+        "id": "sunset-night",
+        "name": "Sunset Night",
+        "dark": {
+          "surface": "#1C3C44",
+          "surfaceText": "#F2D9A8",
+          "surfaceVariant": "#14272E",
+          "surfaceVariantText": "#79989A",
+          "background": "#0D1E24",
+          "backgroundText": "#F2D9A8",
+          "outline": "#CDB473",
+          "surfaceContainerLowest": "#0A191E",
+          "surfaceContainerLow": "#11242A",
+          "surfaceContainer": "#14272E",
+          "surfaceContainerHigh": "#1C3C44",
+          "surfaceContainerHighest": "#26505A",
+          "error": "#F52231",
+          "warning": "#F18321",
+          "info": "#20B5DC"
+        },
+        "light": {}
+      },
+      {
+        "id": "sunset-dawn",
+        "name": "Sunset Dawn",
+        "dark": {},
+        "light": {
+          "surface": "#F2D9A6",
+          "surfaceText": "#0A191E",
+          "surfaceVariant": "#EBECBC",
+          "surfaceVariantText": "#0C546C",
+          "background": "#F6ECD2",
+          "backgroundText": "#0A191E",
+          "outline": "#B7AD7C",
+          "surfaceContainerLowest": "#F9F1DC",
+          "surfaceContainerLow": "#F5E4BC",
+          "surfaceContainer": "#F2D9A6",
+          "surfaceContainerHigh": "#E9D9A0",
+          "surfaceContainerHighest": "#DEC88F",
+          "error": "#B21A29",
+          "warning": "#B85E14",
+          "info": "#0C546C"
+        }
+      }
+    ],
+    "accents": [
+      {
+        "id": "cloud-cream",
+        "name": "Cloud Cream",
+        "sunset-night": {
+          "primary": "#F7DC83",
+          "primaryText": "#0A191E",
+          "primaryContainer": "#A8933C",
+          "secondary": "#F9E473",
+          "surfaceTint": "#0D1E24"
+        },
+        "sunset-dawn": {
+          "primary": "#967F2B",
+          "primaryText": "#F6ECD2",
+          "primaryContainer": "#F5E9A9",
+          "secondary": "#CDB473",
+          "surfaceTint": "#F6ECD2"
+        }
+      },
+      {
+        "id": "sabre-cyan",
+        "name": "Sabre Cyan",
+        "sunset-night": {
+          "primary": "#20B5DC",
+          "primaryText": "#0A191E",
+          "primaryContainer": "#0C546C",
+          "secondary": "#8AD8E8",
+          "surfaceTint": "#0D1E24"
+        },
+        "sunset-dawn": {
+          "primary": "#0B697A",
+          "primaryText": "#F2D9A8",
+          "primaryContainer": "#CDE9F0",
+          "secondary": "#16A3BF",
+          "surfaceTint": "#F2D9A8"
+        }
+      },
+      {
+        "id": "vader-flame",
+        "name": "Vader Flame",
+        "sunset-night": {
+          "primary": "#F18321",
+          "primaryText": "#2A1408",
+          "primaryContainer": "#AD4210",
+          "secondary": "#FBD260",
+          "surfaceTint": "#0D1E24"
+        },
+        "sunset-dawn": {
+          "primary": "#BE5410",
+          "primaryText": "#F6ECD2",
+          "primaryContainer": "#F8D9BC",
+          "secondary": "#AD4210",
+          "surfaceTint": "#F6ECD2"
+        }
+      },
+      {
+        "id": "rebel-red",
+        "name": "Rebel Red",
+        "sunset-night": {
+          "primary": "#F52231",
+          "primaryText": "#230A0C",
+          "primaryContainer": "#8F1B22",
+          "secondary": "#E47C66",
+          "surfaceTint": "#0D1E24"
+        },
+        "sunset-dawn": {
+          "primary": "#B21A29",
+          "primaryText": "#F2D9A8",
+          "primaryContainer": "#F7D3D5",
+          "secondary": "#D62026",
+          "surfaceTint": "#F2D9A8"
+        }
+      }
+    ]
+  }
+}
