@@ -1,15 +1,15 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
- [](color_pink)\
+ [](color_bronze)\
 $os\
 $username\
-[](bg:color_gold fg:color_pink)\
+[](bg:color_gold fg:color_bronze)\
 $directory\
-[](fg:color_gold bg:color_teal)\
+[](fg:color_gold bg:color_petrol)\
 $git_branch\
 $git_status\
-[](fg:color_teal bg:color_sky)\
+[](fg:color_petrol bg:color_visor)\
 $c\
 $cpp\
 $rust\
@@ -21,37 +21,36 @@ $java\
 $kotlin\
 $haskell\
 $python\
-[](fg:color_sky bg:color_frost)\
+[](fg:color_visor bg:color_grogu)\
 $docker_context\
 $conda\
 $pixi\
-[](fg:color_frost bg:color_blossom)\
+[](fg:color_grogu bg:color_halo)\
 $time\
-[ ](fg:color_blossom)\
+[ ](fg:color_halo)\
 $line_break $character"""
 
-palette = 'brand_new_day'
+palette = 'mandalorian_and_grogu'
 
-# Paleta gerada de wallpapers/spiderman-brand-new-day.jpg (ver design/DESIGN.md),
-# casa com o tema do kitty. Texto escuro sobre os pills = color_ink
-# (noite profunda das bordas da arte, feito para texto sobre claro).
-[palettes.brand_new_day]
-color_ink = '#1C0E14'        # noite profunda das bordas do wallpaper (texto sobre os pills)
-color_pink = '#C24B8F'       # teias em tom de vinho/rosa ao redor do personagem
-color_gold = '#F5A623'       # explosão dourada atrás do personagem
-color_teal = '#2E7FA8'       # azul sombra do traje/fundo frio
-color_sky = '#7FD4EC'        # brilho ciano do olho do personagem
-color_frost = '#B8A9C9'      # lilás apagado das teias contra a noite
-color_blossom = '#E07AB8'    # glow magenta/rosa da arte
-color_green = '#6FBF76'
-color_red = '#B52330'
-color_red_bright = '#C8535F'
-color_purple = '#C24B8F'
-color_cream = '#F4EDE1'
+# Paleta gerada de wallpapers/mandalorian-and-grogu.jpg (ver design/DESIGN.md).
+# Texto escuro sobre os pills = color_ink (sombra do beskar/poncho,
+# feito para texto sobre claro); único pill escuro (git) usa color_cream.
+[palettes.mandalorian_and_grogu]
+color_ink = '#1A130C'          # beskar sombra — texto sobre os pills claros
+color_bronze = '#B69753'       # bronze dos cantos do deserto
+color_gold = '#E4CF6C'         # dourado-oliva do deserto — destaque principal
+color_petrol = '#5D6E87'       # azul-petróleo das sombras do capacete
+color_visor = '#A6C2E4'        # azul-aço do reflexo do visor
+color_grogu = '#97A065'        # verde-sálvia do Grogu
+color_halo = '#F07822'         # laranja-fogo do halo
+color_red = '#DC4F4C'          # vermelho dos X-wings
+color_red_bright = '#F07822'   # laranja do halo — erro em destaque
+color_purple = '#C77763'       # rosa-terracota derivado dos X-wings
+color_cream = '#F3E9C8'        # creme das nuvens
 
 [os]
 disabled = false
-style = "bg:color_pink fg:color_ink"
+style = "bg:color_bronze fg:color_ink"
 
 [os.symbols]
 Windows = "󰍲"
@@ -79,8 +78,8 @@ Pop = ""
 
 [username]
 show_always = true
-style_user = "bg:color_pink fg:color_ink"
-style_root = "bg:color_pink fg:color_ink"
+style_user = "bg:color_bronze fg:color_ink"
+style_root = "bg:color_bronze fg:color_ink"
 format = '[ $user ]($style)'
 
 [directory]
@@ -98,95 +97,95 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:color_teal"
-format = '[[ $symbol $branch ](fg:color_cream bg:color_teal)]($style)'
+style = "bg:color_petrol"
+format = '[[ $symbol $branch ](fg:color_cream bg:color_petrol)]($style)'
 
 [git_status]
-style = "bg:color_teal"
-format = '[[($all_status$ahead_behind )](fg:color_cream bg:color_teal)]($style)'
+style = "bg:color_petrol"
+format = '[[($all_status$ahead_behind )](fg:color_cream bg:color_petrol)]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:color_sky"
-format = '[[ $symbol( $version) ](fg:color_ink bg:color_sky)]($style)'
+style = "bg:color_visor"
+format = '[[ $symbol( $version) ](fg:color_ink bg:color_visor)]($style)'
 
 [bun]
 symbol = ""
-style = "bg:color_sky"
-format = '[[ $symbol( $version) ](fg:color_ink bg:color_sky)]($style)'
+style = "bg:color_visor"
+format = '[[ $symbol( $version) ](fg:color_ink bg:color_visor)]($style)'
 
 [c]
 symbol = " "
-style = "bg:color_sky"
-format = '[[ $symbol( $version) ](fg:color_ink bg:color_sky)]($style)'
+style = "bg:color_visor"
+format = '[[ $symbol( $version) ](fg:color_ink bg:color_visor)]($style)'
 
 [cpp]
 symbol = " "
-style = "bg:color_sky"
-format = '[[ $symbol( $version) ](fg:color_ink bg:color_sky)]($style)'
+style = "bg:color_visor"
+format = '[[ $symbol( $version) ](fg:color_ink bg:color_visor)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:color_sky"
-format = '[[ $symbol( $version) ](fg:color_ink bg:color_sky)]($style)'
+style = "bg:color_visor"
+format = '[[ $symbol( $version) ](fg:color_ink bg:color_visor)]($style)'
 
 [golang]
 symbol = ""
-style = "bg:color_sky"
-format = '[[ $symbol( $version) ](fg:color_ink bg:color_sky)]($style)'
+style = "bg:color_visor"
+format = '[[ $symbol( $version) ](fg:color_ink bg:color_visor)]($style)'
 
 [php]
 symbol = ""
-style = "bg:color_sky"
-format = '[[ $symbol( $version) ](fg:color_ink bg:color_sky)]($style)'
+style = "bg:color_visor"
+format = '[[ $symbol( $version) ](fg:color_ink bg:color_visor)]($style)'
 
 [java]
 symbol = ""
-style = "bg:color_sky"
-format = '[[ $symbol( $version) ](fg:color_ink bg:color_sky)]($style)'
+style = "bg:color_visor"
+format = '[[ $symbol( $version) ](fg:color_ink bg:color_visor)]($style)'
 
 [kotlin]
 symbol = ""
-style = "bg:color_sky"
-format = '[[ $symbol( $version) ](fg:color_ink bg:color_sky)]($style)'
+style = "bg:color_visor"
+format = '[[ $symbol( $version) ](fg:color_ink bg:color_visor)]($style)'
 
 [haskell]
 symbol = ""
-style = "bg:color_sky"
-format = '[[ $symbol( $version) ](fg:color_ink bg:color_sky)]($style)'
+style = "bg:color_visor"
+format = '[[ $symbol( $version) ](fg:color_ink bg:color_visor)]($style)'
 
 [python]
 symbol = ""
-style = "bg:color_sky"
-format = '[[ $symbol( $version) ](fg:color_ink bg:color_sky)]($style)'
+style = "bg:color_visor"
+format = '[[ $symbol( $version) ](fg:color_ink bg:color_visor)]($style)'
 
 [docker_context]
 symbol = ""
-style = "bg:color_frost"
-format = '[[ $symbol( $context) ](fg:color_ink bg:color_frost)]($style)'
+style = "bg:color_grogu"
+format = '[[ $symbol( $context) ](fg:color_ink bg:color_grogu)]($style)'
 
 [conda]
-style = "bg:color_frost"
-format = '[[ $symbol( $environment) ](fg:color_ink bg:color_frost)]($style)'
+style = "bg:color_grogu"
+format = '[[ $symbol( $environment) ](fg:color_ink bg:color_grogu)]($style)'
 
 [pixi]
-style = "bg:color_frost"
-format = '[[ $symbol( $version)( $environment) ](fg:color_ink bg:color_frost)]($style)'
+style = "bg:color_grogu"
+format = '[[ $symbol( $version)( $environment) ](fg:color_ink bg:color_grogu)]($style)'
 
 [time]
 disabled = false
 time_format = "%R"
-style = "bg:color_blossom"
-format = '[[  $time ](fg:color_ink bg:color_blossom)]($style)'
+style = "bg:color_halo"
+format = '[[  $time ](fg:color_ink bg:color_halo)]($style)'
 
 [line_break]
 disabled = false
 
 [character]
 disabled = false
-success_symbol = '[](bold fg:color_green)'
+success_symbol = '[](bold fg:color_grogu)'
 error_symbol = '[](bold fg:color_red_bright)'
-vimcmd_symbol = '[](bold fg:color_green)'
+vimcmd_symbol = '[](bold fg:color_grogu)'
 vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
 vimcmd_replace_symbol = '[](bold fg:color_purple)'
 vimcmd_visual_symbol = '[](bold fg:color_cream)'
